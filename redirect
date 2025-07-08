@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>카카오톡 앱 열기 테스트</title>
+</head>
+<body>
+  <h2>카카오톡 앱 열기 테스트</h2>
+
+  <a href="kakaotalk://friend">[카카오톡 실행하기 (a태그)]</a><br><br>
+
+  <button onclick="window.location.href='kakaotalk://friend'">[카카오톡 실행하기 (JS 버튼)]</button><br><br>
+
+  <p>3초 뒤 자동으로 실행 시도됩니다.</p>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = 'kakaotalk://friend';
+    }, 3000);
+  </script>
+</body>
+</html>
